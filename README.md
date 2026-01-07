@@ -91,18 +91,18 @@ This script allows users to select different machine learning algorithms via com
 
 Additional optional arguments are available for other algorithms. Refer to the script's help for more details:
 ```bash
-python ml_algorithms_runner.py --help
+python Customize_script.py --help
 ```
 ### Usage Example
 
 To run a Neural Network algorithm on data.csv with 3 hidden layers, each with 32 neurons, for 50 epochs and a batch size of 16:
 ```bash
-python ml_algorithms_runner.py --file_path data.csv --algorithm neural_network --nn_epochs 50 --nn_batch_size 16 --nn_layers 3 --nn_neurons 32
+python Customize_script.py --file_path data.csv --algorithm neural_network --nn_epochs 50 --nn_batch_size 16 --nn_layers 3 --nn_neurons 32
 ```
 
 To run a Logistic Regression on your_data.csv with a regularization strength of 0.5 and using L1 penalty:
 ```bash
-python ml_algorithms_runner.py --file_path your_data.csv --algorithm logistic_regression --lr_C 0.5 --lr_penalty l1
+python Customize_script.py --file_path your_data.csv --algorithm logistic_regression --lr_C 0.5 --lr_penalty l1
 
 ```
 Adjust the above commands according to your actual file paths and parameters.
@@ -154,7 +154,7 @@ pip install pandas scikit-learn matplotlib lazypredict
 
 ## Usage
 ``` bash
-python LazyListeriaSoil.py --file_path /path/to/your csv --test_size 0.2 --random_state 42
+python Lazy_script.py --file_path /path/to/your csv --test_size 0.2 --random_state 42
 ```
 ### Command-line Arguments
 - `--file_path`: Path to the CSV file containing the dataset (required).
